@@ -1,0 +1,115 @@
+html, body {
+  /* //height: 100%; */
+  margin: 0;
+  padding: 0;
+  /* min-height: 100vh; */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url("Images/pickup_camper_godot.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: round;
+    padding-top: 60px;
+    margin: 0;
+    flex: 1 0 auto;
+    color: wheat;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(22, 22, 24, 0.842);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 999;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 1em 0;
+    list-style: none;
+}
+
+nav li {
+  margin: 0 1.5em;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+nav a:hover {
+  color: #FFC857;
+}
+nav a {
+    color: rgb(42, 93, 151);
+}
+
+main {
+    flex: 1;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+    min-height: 80vh;
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+#description {
+    background-color: black;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 4px;
+}
+
+#hero {
+        position: fixed;           
+        bottom: -350px;
+        right: 550px;
+        width: 10vw;             
+        max-width: 50px;          
+        z-index: -1;
+        pointer-events: none; 
+        transform: scale(55%);
+}
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#logo img {
+    width: 45%;
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: black;
+    height: 40px;
+    width: 100vw;
+    color: rgb(240, 237, 237);
+    text-align: center;
+    justify-content: center;
+    padding-top: 1px;
+    flex-shrink: 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    box-sizing: border-box;
+    z-index: 1000;
+}

@@ -3,9 +3,36 @@
 <head>
     <title>Trailer Park Zombies</title>
     <meta charset="UTF-8" >
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
     <body>
-<p>There was nothing here to be found, yet. 0b</p>
+    <nav>
+        <ul>
+            <li><a href="#content">Home</a></li>
+            <li><a>Screenshots</a></li>
+            <li><a href="https://trailerparkzombies.pistonmedia.fi/presskit">Presskit</a></li>
+        </ul>
+    </nav>
+    <div id="content">
+        <div id="logo">
+            <img src="Images/library_logo.png" alt="Trailer Park Zombies Logo">
+        </div>
+        <div id="description"><p>Here was nothing here to be found, yet.</p></div>
+
+    </div>
+    <div id="hero">
+     <img src="Images/trailer_park-zombes-hero.png" alt="Hero character">
+    </div>
+    <footer>
+        <p>&copy; 2025 PistonMedia. All rights reserved.</p>
+    </footer>
+    <script>
+
+    window.addEventListener('scroll', function() {
+        const hero = document.getElementById('hero');
+        const scrollY = window.scrollY;
+        hero.style.transform = `translateY(${-scrollY * 0.4}px) scale(0.55)`;
+    });
+    </script>
     </body>
 </html>

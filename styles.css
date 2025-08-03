@@ -76,20 +76,22 @@ main {
 }
 
 #hero {
-        position: fixed;           
-        bottom: -350px;
-        right: 550px;
-        width: 10vw;             
-        max-width: 50px;          
-        z-index: -1;
-        pointer-events: none; 
-        transform: scale(55%);
+    position: fixed;
+    top: 0px;
+    right: 20vw;
+    width: 20vw;
+    min-width: 120px;
+    max-width: 350px;
+    z-index: -1;
+    pointer-events: none;
+    transform: scale(75%);
 }
 #logo {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-top: 5;
 }
 #logo img {
     width: 45%;
@@ -98,7 +100,7 @@ main {
 }
 
 footer {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.733);
     height: 40px;
     width: 100vw;
     color: rgb(240, 237, 237);

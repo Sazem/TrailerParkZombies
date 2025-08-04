@@ -69,9 +69,8 @@ main {
     z-index: 5;
     height: 68px;
     background-image: url("Images/destroyed_div_vertical.png");
+    content: "";
 }
-
-
 
 #screenshots {
     position: relative;

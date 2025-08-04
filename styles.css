@@ -1,3 +1,15 @@
+@media (max-width: 600px) {
+    #hero {
+        display: none;
+    }
+    #horizontal-bar {
+        display: none;
+    }
+    #logo {
+        transform: scale(70%);
+    }
+}
+
 html, body {
   /* //height: 100%; */
   margin: 0;

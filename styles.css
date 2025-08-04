@@ -3,20 +3,14 @@ html, body {
   margin: 0;
   padding: 0;
   /* min-height: 100vh; */
+  background-color: black;
+  color: rgb(233, 178, 77);
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-image: url("Images/pickup_camper_godot.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: round;
-    padding-top: 60px;
-    margin: 0;
-    flex: 1 0 auto;
-    color: wheat;
+    /* display: flex;
+    flex-direction: column; */
+
 }
 
 nav {
@@ -28,6 +22,10 @@ nav {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     z-index: 999;
     font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -47,6 +45,7 @@ nav li {
 nav a:hover {
   color: #FFC857;
 }
+
 nav a {
     color: rgb(42, 93, 151);
 }
@@ -55,51 +54,140 @@ main {
     flex: 1;
 }
 
+#home {
+    min-height: 100vh;
+    background-image: url("Images/pickup_camper_godot.png");
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    width: 100vw;
+
+}
+
+#vertical-bar {
+    position: relative;
+    z-index: 5;
+    height: 68px;
+    background-image: url("Images/destroyed_div_vertical.png");
+}
+
+
+
+#screenshots {
+    position: relative;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    height: 80%;
+    width: 100%;
+    /* padding: 0; */
+    min-height: 64px;
+    z-index: 3;
+    /* padding-left: 1em; */
+    padding-bottom: 16px;
+    padding: auto;
+    text-align: center;
+}
+#screenshots p {
+    margin-top: 0px;
+    display: inline-block;
+
+}
+
 #content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
+    margin: -120px auto;
     max-width: 800px;
     width: 100%;
     min-height: 80vh;
-    padding-left: 5em;
-    padding-right: 5em;
+    /* background-color: pink; */
+    /* padding-left: 5em;
+    padding-right: 5em; */
+    scroll-margin-top: 0;
+}
+
+#metal-pole {
+    height: 12px;
+    width: 32px;
+    background: linear-gradient(to right, #131318, #565664, #1a171f);
+    border: 1px solid #201d1d;
+    margin-top: 0px;
+    margin-bottom: -15px;
+    border-top: 0;
+}
+
+#trailer {
+    background-color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-width: 450px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-top: 12px;
+    border-radius: 15px;
+    margin-bottom: 162px;
 }
 
 #description {
     background-color: black;
     padding-left: 15px;
     padding-right: 15px;
-    border-radius: 4px;
+    border-radius: 6px;
+    margin-top: 100px;
+    background-image: url("Images/rusty_texture.jpg");
+    color: black;
+    border: black;
+    border-style: double;
+    border-width: 5px;
+    font-weight:400px;
 }
 
+.special {
+    color: rgba(211, 9, 9, 0.89);
+}
+
+.special-dark {
+    color: rgb(211, 7, 7);
+    background-color: rgba(0, 0, 0, 0.753);
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 3px;
+}
 #hero {
-    position: fixed;
+    position: absolute;
     top: 0px;
     right: 20vw;
     width: 20vw;
     min-width: 120px;
     max-width: 350px;
-    z-index: -1;
+    z-index: 2;
     pointer-events: none;
     transform: scale(75%);
 }
+
 #logo {
+    height: 124px;
+    margin-top: 49px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 5;
+    min-height: 180px;
+    max-height: 190px;
+    margin-bottom: -28px;
 }
 #logo img {
-    width: 45%;
-    display: block;
-    margin: 0 auto;
+    /* transform: scale(60%); */
+    min-height: 128px;
 }
 
 footer {
+    position: relative;
     background-color: rgba(0, 0, 0, 0.733);
     height: 40px;
     width: 100vw;
@@ -108,10 +196,80 @@ footer {
     justify-content: center;
     padding-top: 1px;
     flex-shrink: 0;
-    position: fixed;
     left: 0;
     bottom: 0;
     margin: 0;
     box-sizing: border-box;
     z-index: 1000;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 0.8fr));
+  gap: 1.1em;
+  width: 80%;
+  margin: auto;
+}
+
+.gallery a img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease-in-out;
+}
+
+.gallery a:hover img {
+  transform: scale(1.05);
+}
+
+#features {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    margin-bottom: 50px;
+}
+#key-features {
+    margin-right: 1.5em;
+}
+
+#button-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+}
+
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    background-color: #ebb54b;
+    height: 64px;
+    border: #FFC857;
+    border-radius: 5px;
+    min-width: 165px;
+    border-radius: 5px;
+    border-style: groove;
+}
+
+.button img {
+    max-height: 32px;
+}
+.steam {
+    background-color: rgb(88, 134, 88);
+}
+.itch-io {
+    background-color: rgb(155, 68, 68);
+}
+.button a:hover {
+  color: #FFC857;
+}
+
+.button a {
+    color: rgb(18, 29, 43);
+    display: inline-flex;
+    align-items: center;
 }

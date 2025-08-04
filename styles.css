@@ -5,6 +5,7 @@ html, body {
   /* min-height: 100vh; */
   background-color: black;
   color: rgb(233, 178, 77);
+  scroll-behavior: smooth;
 }
 
 body {
@@ -64,10 +65,13 @@ main {
 
 }
 
-#vertical-bar {
+#horizontal-bar {
     position: relative;
+    display: block;
+    margin: 0px;
     z-index: 5;
     height: 68px;
+    width: 100%;
     background-image: url("Images/destroyed_div_vertical.png");
     content: "";
 }
@@ -86,6 +90,7 @@ main {
     padding-bottom: 16px;
     padding: auto;
     text-align: center;
+    scroll-margin: 0px;
 }
 #screenshots p {
     margin-top: 0px;

@@ -76,12 +76,19 @@ nav h2 {
 }
 
 #content {
-  display: flexbox;
+  display: flex;
   flex-direction: column; 
   display: block;
-  /* overflow: scroll; */
+  flex-wrap: wrap;
   width: 100%;
   height: auto;
+}
+
+#description {
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    word-break: break-word; 
+    margin-right: 5em;
 }
 
 #content img {
@@ -105,4 +112,15 @@ content p, h5 {
 
 #factsheet {
   display: flex;
+}
+
+.characters {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 4em;
+}
+.character p {
+  text-align: center;
+  font-size: larger;
+  font-weight: 800;
 }

@@ -6,6 +6,29 @@ html, body {
   scroll-behavior: smooth;
 }
 
+ul {
+  list-style-type: none;
+  padding: 20px 0px 0px 0px;
+  margin-top: 15px;
+  width: 100%;
+  font-size: 1.2em;
+} 
+
+ul a {
+  color: rgb(80, 80, 80);
+  width: 100%;
+  padding: 5px 0px 0px 0px;
+  /* background-color: rgb(255, 255, 255); */
+  display: block;
+  text-decoration: none;
+}
+
+ul a:hover {
+  display: block;
+  width: 100%;
+  background-color:rgba(252, 212, 33, 0.616);
+}
+
 #page {
     display: flex;
     display: flexbox;
@@ -14,15 +37,56 @@ html, body {
     max-width: 1180px;
 }
 
-#nav {
-  margin-left: 120px;
+#page h4 {
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+#page p {
+  margin: 0px 0px 2px;
+}
+
+.email {
+  margin-top: 0px;
+  padding-top: 0px;
+  margin-bottom: 15px;
+  font-size: 1em;
+  color: #555;         /* Slightly muted color for the email */
+}
+
+a {
+  color: rgb(194, 214, 14);
+  font-weight: bold;
+}
+
+nav {
+  /* margin-left: 120px; */
   height: 100%;
+  width: 300px;
+  padding: 5p 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+nav h2 {
+  margin-bottom: 1px;
+  font-size: 2rem;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: rgb(56, 56, 68);
 }
 
 #content {
   display: flexbox;
   flex-direction: column; 
   display: block;
+  /* overflow: scroll; */
+  width: 100%;
+  height: auto;
+}
+
+#content img {
+  object-fit: contain;
+  max-width: 1000px;
 }
 
 content p, h5 {

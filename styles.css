@@ -8,6 +8,25 @@
     #logo {
         transform: scale(70%);
     }
+    #home {
+        position: relative;
+        height: 800px;
+        margin-top: 20px;
+        background-image: url("Images/pickup_camper_godot.png");
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        width: 100vw;
+        min-height: 750px;
+        overflow-x: hidden;
+    }
+    #horizontal-bar {
+        height: 0px;
+        z-index: -10;
+        background-image: url("");
+        content: "";
+        display: none;
+    }
 }
 
 html, body {
